@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>A Guide to the IJSO</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobilenavigation.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.png" type="image/x-ico" />
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="/navigationimport.js" type="module"></script>
+  <style>
+    /* Homepage specific navigation override */
+    nav {
+      background-color: transparent !important;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        background-color: transparent !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <canvas id="particleCanvas"></canvas>
+
+  <div id="newest" style="display: none;">
+    <p>Succes tuturor românilor la ONSJ din partea echipei "A Guide to the IJSO"!</p>
+    <p>Good luck to all Romanians at ONSJ from the "A Guide to the IJSO" team!</p>
+  </div>
+
+
+  <section class="hero-section">
+    <div class="hero-content"><br><br>
+      <h1><span class="gradient-text">Your Ultimate Guide to IJSO Preparation</span></h1>
+      <p class="hero-description">Comprehensive resources, theory, practice questions, mock tests, and mindset guides –
+        all crafted by former medalists to help you excel.</p>
+      <div class="hero-cta">
+        <a href="Start Learning/startlearning.html" class="cta-button primary">Start Preparing Now</a>
+        <a href="Account/sign-up.html" class="cta-button secondary">Join the Community</a>
+      </div>
+    </div><br><br><br><br>
+  </section>
+
+
+  <section id="about" class="reveal">
+    <div class="section-header">
+      <h2>About the IJSO Guide</h2>
+    </div>
+    <p class="about-description">
+      Created by talented students and former IJSO medalists, this guide aims to provide accessible, high-quality
+      resources for students preparing for the International Junior Science Olympiad. Our mission is to level the
+      playing field and help students worldwide excel in science competitions.
+    </p>
+  </section>
+
+  <section id="features" class="reveal">
+    <div class="section-header">
+      <h2>Explore Features</h2>
+    </div>
+    <div class="features-grid">
+      <!-- 1 -->
+      <div class="feature-card card-large reveal stagger-1" onclick="window.location.href='Theory/theory.html'">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>Theory Content</h3>
+        <p>Comprehensive coverage of physics, chemistry, and biology topics in the IJSO syllabus.</p>
+      </div>
+      <!-- 2 -->
+      <div class="feature-card card-tall reveal stagger-2"
+        onclick="window.location.href='Practice Questions/practicequestions.html'">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <h3>Practice Questions</h3>
+        <p>Targeted, topic-wise questions across all IJSO subjects—complete with hints and solutions.</p>
+      </div>
+      <!-- 3 -->
+      <div class="feature-card card-wide reveal stagger-3" onclick="window.location.href='Mock Tests/mocktests.html'">
+        <i class="fa-solid fa-vial"></i>
+        <h3>Mock Tests & Quizzes</h3>
+        <p>Practice with full-length, realistic mock exams with answers.</p>
+      </div>
+      <!-- 4 -->
+      <div class="feature-card reveal stagger-4"
+        onclick="window.location.href='National Selection Tests/selections.html'">
+        <i class="fa-solid fa-globe"></i>
+        <h3>National Junior Science Olympiad Papers</h3>
+        <p>Massive collection of national junior science olympiad papers of different countries.</p>
+      </div>
+      <!-- 5 -->
+      <div class="feature-card reveal stagger-5" onclick="window.location.href='Study Materials/studymaterials.html'">
+        <i class="fa-solid fa-file-pdf"></i>
+        <h3>Study Materials</h3>
+        <p>Top books, notes, and links for mastering all IJSO topics.</p>
+      </div>
+      <!-- 6 -->
+      <div class="feature-card card-wide reveal stagger-1" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Tips & Tricks</h3>
+        <p>Avoid frequent pitfalls and exam traps with this helpful guide.</p>
+      </div>
+      <!-- 7 -->
+      <div class="feature-card reveal stagger-2" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-brain"></i>
+        <h3>Mindset & Motivation</h3>
+        <p>Learn from gold medalists how to think, work, and win.</p>
+      </div>
+      <!-- 8 -->
+      <div class="feature-card reveal stagger-3" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-microscope"></i>
+        <h3>Lab Apparatus Guide</h3>
+        <p>Understand and recognize all key experimental tools in physics, chem, and bio.</p>
+      </div>
+      <!-- 9 -->
+      <div class="feature-card card-wide reveal stagger-1" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-trophy"></i>
+        <h3>Success Stories</h3>
+        <p>Read inspiring journeys of students who triumphed at the IJSO and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback" class="reveal">
+    <div class="section-header">
+      <h2>What Students Say</h2>
+    </div>
+    <div class="feedback-carousel-container">
+      <button class="carousel-btn prev-btn" aria-label="Previous Slide"><i
+          class="fa-solid fa-chevron-left"></i></button>
+
+      <div class="feedback-carousel">
+        <div class="feedback-card active">
+          <div class="feedback-avatar"></div>
+          <p>"The resources here are top-notch. Helped me secure a gold medal!"</p>
+          <h4>— Alex D.</h4>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-avatar"></div>
+          <p>"A must-have guide for any serious IJSO aspirant. Highly recommended."</p>
+          <h4>— Samsung M.</h4>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-avatar"></div>
+          <p>"Clear, concise, and incredibly helpful practice questions."</p>
+          <h4>— Sarah J.</h4>
+        </div>
+      </div>
+
+      <button class="carousel-btn next-btn" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+      <div class="carousel-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section reveal">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form class="contact-form" action="https://formsubmit.co/ijsoguide@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="_honey" style="display:none">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="pre-footer" style="position: relative; z-index: 2;">
+    <div class="pre-footer-left">
+      <h3>A Guide to the IJSO</h3>
+      <p>Your ultimate resource for International Junior Science Olympiad preparation.</p>
+    </div>
+    <div class="pre-footer-right">
+      <h4>Connect With Us</h4>
+      <div class="pre-footer-icons">
+        <a href="https://www.instagram.com/ijsoguide/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span class="social-handle">@ijsoguide</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="position: relative; z-index: 2;">
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <script src="/glowingspots.js"></script>
+  <script>
+    /* Expiration for the "newest" element */
+    let startDate = new Date('2025-07-22T00:00:00Z')
+    let endDate = new Date('2025-07-23T00:00:00Z')
+    let current = new Date();
+    if (startDate < current && current < endDate) document.getElementById('newest').style.display = "flex"; 
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    // Intersection Observer for reveal animations
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // Optional: stop observing once it's revealed
+          // revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.feedback-card');
+      const dots = document.querySelectorAll('.dot');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      let currentSlide = 0;
+      let slideInterval;
+
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Handle wrapping
+        if (index >= slides.length) currentSlide = 0;
+        else if (index < 0) currentSlide = slides.length - 1;
+        else currentSlide = index;
+
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+        
+        // Reset timer on interaction
+        resetInterval();
+      }
+
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
+
+      function prevSlide() {
+        showSlide(currentSlide - 1);
+      }
+
+      function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+      }
+
+      // Event Listeners
+      nextBtn.addEventListener('click', nextSlide);
+      prevBtn.addEventListener('click', prevSlide);
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          showSlide(parseInt(dot.dataset.slide));
+        });
+      });
+
+      // Pause on hover
+      const container = document.querySelector('.feedback-carousel-container');
+      container.addEventListener('mouseenter', () => clearInterval(slideInterval));
+      container.addEventListener('mouseleave', resetInterval);
+
+      // Start auto-play
+      resetInterval();
+    });
+  </script>
+</body>
+
+</html>
